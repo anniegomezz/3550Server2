@@ -1,0 +1,10 @@
+{"keys": [{"alg": "RS256", "kty": "RSA", "use": "sig", "kid": "goodKID", "n": "zTafZ0wNGJTfNF58oaXp89uOw3oEQzSrFKMF-FjLzO7y5F_rIJGR53ZUFlcm9aBsAN1iCxrS6SXg8ICuIhEun8SLBhe8BDPIXMH69cBiTpmWkx-RMqcnPjeXo0U5LjQ93WuxyoILJvUW2SC8nNmXgmfIr52ISbrprO_1Ol9-Ma-jFZ5AgG3nJn3sMTGIl9hnpOMIi09TvEopnZOPn04DRLLsWd-itJk4_d4ZtpdF4lcfP7AQ18yanM_CaK5UjO_Q288V9AkhASRxMGyEIKS6mcB9_V8OLtWc_jKDOR11ET0inANduz0JBgtm2-48auxRZs4u6lfMkHTVNgyQv9MzwQ", "e": "AQAB"}]}
+
+
+a REST api is for sending http packets. 
+If you have curl on your system you can make a POST request to your server with 
+curl -d "" localhost:8080/auth and 
+a GET request with curl localhost:8080/.well-known/jwks.json
+
+Question for you: What should a GET request to /.well-known/jwks.json actually return? 
+Should I return signed tokens, unsigned tokens, or the claims (header/payload) for tokens?
